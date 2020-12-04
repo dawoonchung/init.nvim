@@ -20,15 +20,16 @@ Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'jiangmiao/auto-pairs'
 Plug 'MaxMEllon/vim-jsx-pretty'
-Plug 'morhetz/gruvbox'
+Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 call plug#end()
 
 " Set colour scheme to gruvbox
 set termguicolors
-let g:gruvbox_contrast_dark='hard'
+let g:material_theme_style='ocean'
 try
-	colorscheme gruvbox
-catch
+	" colorscheme gruvbox
+  colorscheme material
+  catch
 endtry
 
 " Add Coc extensions – listed in alphabetical order
