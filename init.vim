@@ -17,6 +17,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'jiangmiao/auto-pairs'
+Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'morhetz/gruvbox'
 call plug#end()
 
