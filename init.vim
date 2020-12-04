@@ -23,11 +23,10 @@ Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 call plug#end()
 
-" Set colour scheme to gruvbox
+" Set colour scheme to Material
 set termguicolors
 let g:material_theme_style='ocean'
 try
-	" colorscheme gruvbox
   colorscheme material
   catch
 endtry
