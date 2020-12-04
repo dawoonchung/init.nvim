@@ -32,6 +32,7 @@ endtry
 let g:coc_global_extensions = [
 			\ 'coc-angular',
 			\ 'coc-css',
+      \ 'coc-diagnostic',
 			\ 'coc-eslint',
 			\ 'coc-git',
 			\ 'coc-html',
