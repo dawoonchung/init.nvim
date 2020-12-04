@@ -39,6 +39,7 @@ let g:coc_global_extensions = [
 			\ 'coc-json',
 			\ 'coc-phpls',
 			\ 'coc-pyright',
+      \ 'coc-react-refactor',
 			\ 'coc-stylelintplus',
 			\ 'coc-svg',
 			\ 'coc-tabnine',

@@ -3,5 +3,33 @@
   "less.validate": false,
   "scss.validate": false,
   "wxss.validate": false,
-  "eslint.autoFixOnSave": true
+  "eslint.autoFixOnSave": true,
+  "diagnostic-languageserver.filetypes": {
+    "php": "phpcs"
+  },
+  "diagnostic-languageserver.linters": {
+    "phpcs": {
+      "command": "./vendor/bin/phpcs",
+      "debounce": 100,
+      "rootPatterns": [ "composer.json", "composer.lock", "vendor", ".git" ],
+      "args": [ "--report=emacs" ],
+      "offsetLine": 0,
+      "offsetColumn": 0,
+      "sourceName": "phpcs",
+      "formatLines": 1,
+      "formatPattern": [
+        "^.*:(\\d+):(\\d+):\\s+(.*)\\s+-\\s+(.*)$",
+        {
+          "line": 1,
+          "column": 2,
+          "message": 4,
+          "security": 3
+        }
+      ],
+      "securities": {
+        "error": "error",
+        "warning": "warning"
+      }
+    }
+  }
 }
