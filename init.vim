@@ -1,5 +1,6 @@
 " Opinionated setups
 set noignorecase
+set expandtab
 set shiftwidth=2
 set splitright
 set tabstop=2
@@ -37,7 +38,7 @@ let g:coc_global_extensions = [
 			\ 'coc-json',
 			\ 'coc-phpls',
 			\ 'coc-pyright',
-			\ 'coc-stylelint',
+			\ 'coc-stylelintplus',
 			\ 'coc-svg',
 			\ 'coc-tabnine',
 			\ 'coc-tsserver',
