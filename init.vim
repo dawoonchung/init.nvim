@@ -6,6 +6,7 @@ set splitright
 set tabstop=2
 set tw=80
 
+" Enable undo history
 try
 	set undodir=~/.config/nvim/.undo/
 	set undofile
@@ -23,6 +24,8 @@ Plug 'morhetz/gruvbox'
 call plug#end()
 
 " Set colour scheme to gruvbox
+set termguicolors
+let g:gruvbox_contrast_dark='hard'
 try
 	colorscheme gruvbox
 catch
