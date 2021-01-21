@@ -21,6 +21,8 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'jiangmiao/auto-pairs'
 Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
 call plug#end()
 
 " Set colour scheme to Material
