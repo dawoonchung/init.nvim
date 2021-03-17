@@ -23,6 +23,7 @@ Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 " Set colour scheme to Material
@@ -55,7 +56,6 @@ let g:coc_global_extensions = [
 
 " NERDTree configurations
 let g:NERDTreeWinSize = 35
-let g:NERDTreeWinPos = 'right'
 au VimEnter * NERDTree
 au VimEnter * wincmd p
 au TabEnter * NERDTree
@@ -69,3 +69,8 @@ augroup END
 
 " Yank list
 nnoremap <silent> <space>y  :<C-u>CocList -A --normal yank<cr>
+
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+
+nmap <F6> :NERDTreeToggle<CR>
+nmap <F7> :vertical wincmd f<CR>

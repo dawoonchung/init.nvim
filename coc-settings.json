@@ -31,5 +31,13 @@
         "warning": "warning"
       }
     }
-  }
+  },
+  "tabnine.disable_file_regex": [
+    "[.]md$",
+    "[.]html$",
+    "[.]css$",
+    "[.]scss$",
+    "[.]js$",
+    "[.]ts$"
+  ]
 }
