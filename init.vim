@@ -43,7 +43,6 @@ let g:coc_global_extensions = [
 			\ 'coc-git',
 			\ 'coc-html',
 			\ 'coc-json',
-			\ 'coc-phpls',
 			\ 'coc-pyright',
       \ 'coc-react-refactor',
 			\ 'coc-stylelintplus',
@@ -56,6 +55,7 @@ let g:coc_global_extensions = [
 
 " NERDTree configurations
 let g:NERDTreeWinSize = 35
+let g:NERDTreeWinPos = 'right'
 au VimEnter * NERDTree
 au VimEnter * wincmd p
 au TabEnter * NERDTree
