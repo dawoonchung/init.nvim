@@ -16,10 +16,10 @@ endtry
 " Install plugins
 call plug#begin()
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/vim-jsx-improve'
 Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'jiangmiao/auto-pairs'
-Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
