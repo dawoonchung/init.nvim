@@ -1,9 +1,14 @@
 {
+  "coc.preferences.jumpCommand": "vsplit",
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,
   "wxss.validate": false,
-  "eslint.autoFixOnSave": true,
+  "intelephense.environment.phpVersion": "7.4.0",
+  "intelephense.stubs": [
+    "mysql",
+    "wordpress"
+  ],
   "diagnostic-languageserver.filetypes": {
     "php": "phpcs"
   },
@@ -32,6 +37,8 @@
       }
     }
   },
+  "eslint.autoFixOnSave": true,
+  "stylelintplus.autoFixOnSave": true,
   "tabnine.disable_file_regex": [
     "[.]md$",
     "[.]html$",

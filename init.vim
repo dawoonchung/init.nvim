@@ -1,3 +1,5 @@
+set nocompatible
+
 " Opinionated setups
 set noignorecase
 set expandtab
@@ -15,15 +17,12 @@ endtry
 
 " Install plugins
 call plug#begin()
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'neoclide/vim-jsx-improve'
-Plug 'preservim/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'jiangmiao/auto-pairs'
-Plug 'kaicataldo/material.vim', { 'branch': 'main' }
-Plug 'leafgarland/typescript-vim'
-Plug 'peitalin/vim-jsx-typescript'
-Plug 'ryanoasis/vim-devicons'
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'sheerun/vim-polyglot'
+  Plug 'preservim/nerdtree'
+  Plug 'Xuyuanp/nerdtree-git-plugin'
+  Plug 'kaicataldo/material.vim', { 'branch': 'main' }
+  Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 " Set colour scheme to Material
@@ -43,13 +42,13 @@ let g:coc_global_extensions = [
 			\ 'coc-git',
 			\ 'coc-html',
 			\ 'coc-json',
+			\ 'coc-pairs',
+			\ 'coc-phpls',
 			\ 'coc-pyright',
       \ 'coc-react-refactor',
 			\ 'coc-stylelintplus',
-			\ 'coc-svg',
 			\ 'coc-tabnine',
 			\ 'coc-tsserver',
-			\ 'coc-xml',
 			\ 'coc-yank',
 \]
 
@@ -74,3 +73,9 @@ inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 nmap <F6> :NERDTreeToggle<CR>
 nmap <F7> :vertical wincmd f<CR>
+
+" Remap keys for gotos
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
