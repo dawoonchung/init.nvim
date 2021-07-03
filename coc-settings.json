@@ -1,9 +1,5 @@
 {
   "coc.preferences.jumpCommand": "vsplit",
-  "css.validate": false,
-  "less.validate": false,
-  "scss.validate": false,
-  "wxss.validate": false,
   "intelephense.environment.phpVersion": "7.4.0",
   "intelephense.stubs": [
     "mysql",
@@ -46,5 +42,9 @@
     "[.]scss$",
     "[.]js$",
     "[.]ts$"
-  ]
+  ],
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "wxss.validate": false
 }
